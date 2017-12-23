@@ -11,8 +11,8 @@ function initializeWithApi(api) {
 
       const i18nKey = `solutions_likes_plugin`;
 
-      const likesHTML = likesCount > 0 ? `${I18n.t(`${i18nKey}.likes`, { count: likesCount })}` : '';
-      const solutionsHTML = solutionsCount > 0 ? `${I18n.t(`${i18nKey}.solutions`, { count: solutionsCount })}` : '';
+      const likesHTML = likesCount > 0 ? I18n.t(`${i18nKey}.likes`, { count: likesCount }) : '';
+      const solutionsHTML = solutionsCount > 0 ? I18n.t(`${i18nKey}.solutions`, { count: solutionsCount }) : '';
       const trustLevelHTML = trustLevelName.capitalize();
 
       const htmlCodes = [];

@@ -1,0 +1,17 @@
+@import "common/foundation/variables";
+
+#solutions-likes-count {
+  .mobile-view & {
+    display: inline-block;
+  }
+
+  .like {
+    color: $love;
+  }
+  .solution {
+    color: green;
+  }
+  .fa {
+    font-size: 14px;
+  }
+}

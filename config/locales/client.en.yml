@@ -7,3 +7,4 @@ en:
       solutions: 
         one: "<b>{{count}}</b> Solution"
         other: "<b>{{count}}</b> Solutions"
+      attendance: "Attendance: {{rate}}%"

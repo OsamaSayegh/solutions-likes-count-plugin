@@ -33,9 +33,9 @@ after_initialize do
       def attendance_rate
         if poster_summary.present? && object&.user
           days_visited = @summary.days_visited
-          join_date = object.user.created_at.to_date
-          now_date = Time.now.to_date
-          days_between_dates = (now_date - join_date).to_i
+          join_date = object.user.created_at
+          now_date = Time.now
+          days_between_dates = ((now_date - join_date) / 1.day).ceil
           attendance = (days_visited.to_f / days_between_dates) * 100
           attendance
         end

@@ -37,6 +37,7 @@ after_initialize do
           now_date = Time.now
           days_between_dates = ((now_date - join_date) / 1.day).ceil
           attendance = (days_visited.to_f / days_between_dates) * 100
+          attendance = attendance > 100 ? 100 : attendance
           attendance
         end
       end
